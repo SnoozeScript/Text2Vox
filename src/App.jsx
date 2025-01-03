@@ -1,11 +1,15 @@
-import "./App.css";
+import TextToSpeech from "./components/TextToSpeech";
+import AnimatedAppBackground from "./components/AnimatedAppBackground";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <div className="relative min-h-screen flex items-center justify-center p-6">
+      <AnimatedAppBackground />
+      <div className="relative z-10 w-full">
+        <TextToSpeech />
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
